@@ -1,0 +1,185 @@
+<html>
+    <head>
+	    <title>Test</title>
+	<style>
+	#main{
+	padding-left:5%;
+	padding-right:5%;
+	}
+	#question{
+	background-color:#ffeaa7;
+	font-size:40px;
+	height:relative;
+	padding-left:3%;
+	color:#d63031;
+	
+	}
+	
+	select {
+        width: relative;
+		font-size:30px;
+		margin-bottom:15px;
+    }
+	input {
+	font-size:35px;
+	}
+	#submit{
+	padding: 15px 30px;
+    text-align: center;
+    border-radius:25px;
+	background-color:lightgreen;
+	color:white;
+	font-weight:bold;
+	}
+	#reset{
+	
+    padding: 15px 30px;
+    text-align: center;
+    border-radius:25px;
+	background-color:red;
+	color:white;
+	font-weight:bold;
+	}
+	
+	#main1{
+	padding-left:15%;
+	padding-right:5%;
+	width:100%;
+	}
+	
+	#footer {
+    position: absolute;
+    bottom: 30px;
+	padding-left:5%;
+	padding-right:5%;
+    width: relative;
+	border: 5px solid white;
+}
+	
+	</style>
+	</head>
+
+
+<body bgcolor="#55efc4">
+    <form name="google-sheet">
+        <center><font color="#2d3436" size="8">
+            <b><B>Technology Quiz Question</i></b></font></br></br>
+			<font color="red" size="8">
+                <b><i>Enter name </b></i><input type="text" name="Name" placeholder="enter name"></br></center></font>
+        <div id="main">        
+        <div id="question"></br>
+            Q1:Who founded Apple computer?</br> <select name="Q1">
+                <option value="not selected">not selected</option>
+                <option value="Stephen Fry">Stephen Fry</option>
+                <option value="Bill gates">Bill gates</option>
+				<option value="Steve jobs">Steve jobs</option>
+				<option value="Stephen Hawking">Stephen Hawking</option>
+                </select></br>
+			
+			Q2:Which of these is not a peripheral, in computer terms?</br> <select name="Q2">
+                <option value="not selected">not selected</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Monitor">Monitor</option>
+				<option value="Mouse">Mouse</option>
+				<option value="Motherboard">Motherboard</option>
+                </select></br>
+			
+			Q3:Which of these products is not made by the Apple corporation?</br> <select name="Q3">
+                <option value="not selected">not selected</option>
+                <option value="imax">imax</option>
+                <option value="iphone">iphone</option>
+				<option value="imac">imac</option>
+				<option value="ipod">ipod</option>
+                </select></br>
+			
+			Q4:What is the name for a computing pointing device?</br> <select name="Q4">
+                <option value="not selected">not selected</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Sound Card">Sound Card</option>
+				<option value="Ram">Ram</option>
+				<option value="Monitor">Monitor</option>
+                </select></br>
+			
+			Q5:Which of these is not a kind of computer?</br> <select name="Q5">
+                <option value="not selected">not selected</option>
+                <option value="Apple">Apple</option>
+                <option value="Lenovo">Lenovo</option>
+				<option value="Tosibha">Tosibha</option>
+				<option value="Lada">Lada</option>
+                </select></br>
+			
+			Q6:When did the compact disk first appear on the market?</br> <select name="Q6">
+                <option value="not selected">not selected</option>
+                <option value="1982">1982</option>
+                <option value="1992">1992</option>
+				<option value="1955">1955</option>
+				<option value="1989">1989</option>
+                </select></br>
+			
+			Q7:When was the DVD introduced?</br> <select name="Q7">
+                <option value="not selected">not selected</option>
+                <option value="1970">1970</option>
+                <option value="1990">1990</option>
+				<option value="2000">2000</option>
+				<option value="1995">1995</option>
+                </select></br>
+			
+			Q8:what does the internet prefix WWW stand for?</br> <select name="Q8">
+                <option value="not selected">not selected</option>
+                <option value="Wide web width">wide web width</option>
+                <option value="World wide web">World wide web</option>
+				<option value="World wide weather">World wide weather</option>
+				<option value="Wide width world"></option>
+                </select></br>
+			Q9:A network designed to allow communication within an organization is called?</br> <select name="Q9">
+                <option value="not selected">not selected</option>
+                <option value="World wide web">World wide web</option>
+                <option value="Yahoo">Yahoo</option>
+				<option value="Intranet">Intranet</option>
+				<option value="Internet">Internet</option>
+                </select></br>
+			
+			Q10:Who invented flexible photographic film?</br> <select name="Q10">
+                <option value="not selected">not selected</option>
+                <option value="Leonardo da vinci">Leonardo da vinci</option>
+                <option value="Linda Eastman">Linda Eastman</option>
+				<option value="Louis Daguerre">Louis Daguerre</option>
+				<option value="George Eastman">George Eastman</option>
+                </select></br>
+			</li></br>
+			  </div>
+		</div></br>
+        <CENTER>
+			<font color="yellow" size="6">
+			Do you want to know the result</font> <select name="result">
+			<option value="not selected">not selected</option>
+			<option value="Yes">Yes</option>
+            <option value="No">No</option>
+			</select>
+            </br></br>
+			
+      
+        <input id="submit" type="submit" name="submit" >
+        <input id="reset" type="reset" name="" ></br></br></br>
+		
+		<i><b><font color="red" size="6">
+		Designed and developed by Aman kumar</i></b></font>
+		</CENTER>
+    </form>
+
+<script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbygNFoM-7nrZaD1q_mkbtgN56UtHGix1Jb4H6e69aG4IwikOtIbM2kA_VV34Qq4UOTg/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("THANK YOU"))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+
+
+</body>
+</html>
